@@ -527,4 +527,4 @@ def update_card_geral(active_cell, lista_de_eventos, calendar_data, mes, ano):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run_server()
