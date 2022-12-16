@@ -3,7 +3,7 @@ from dash import Dash, Input, Output, State, callback_context
 import dash_bootstrap_components as dbc
 from dash.dependencies import ALL
 from dash import html, dcc
-
+from flask import Flask
 import pandas as pd
 import datetime
 import json
@@ -524,7 +524,3 @@ def update_card_geral(active_cell, lista_de_eventos, calendar_data, mes, ano):
         card_tarefa+= [new_card]
 
     return data_conc, dia_semana_atual, dia_mês_atual, card_tarefa
-
-
-if __name__ == "__main__":
-    app.run_server()
